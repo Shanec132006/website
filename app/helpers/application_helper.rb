@@ -11,4 +11,11 @@ module ApplicationHelper
       "#{page_title} | #{base_title}"
     end
   end
+
+  # Checks for active page
+
+  def active_link(link)
+    "active" if current_page?(link)  
+  end
+
 end

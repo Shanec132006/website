@@ -1,0 +1,28 @@
+<div class="navbar-wrapper">
+    <div class="container">
+
+      <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Shane Campbell</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="<%= active_link(home_path) %>"><%= link_to "Home",   home_path %></li>
+              <li class="<%= active_link(about_path) %>"><%= link_to "About", about_path %></li>
+              <li class="<%= active_link(posts_path) %>"><%= link_to "Blog", posts_path %></li>
+              <li class="<%= active_link(contact_path) %>"><%= link_to "Contact",   contact_path %></li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>

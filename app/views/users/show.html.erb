@@ -1,8 +1,11 @@
+
+<div class="container sub_page">
 <p id="notice"><%= notice %></p>
 
 <p>
   <strong>Name:</strong>
-  <%= @user.name %>
+  <%= @user.f_name  %>   <%= @user.l_name  %>
+
 </p>
 
 <p>
@@ -12,3 +15,4 @@
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
+</div>
