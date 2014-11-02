@@ -33,8 +33,9 @@
                 </h3>
                 <p>by <a href="#"><%= post.user.f_name %> <%= post.user.l_name %> </a></p>
                 <p><%= post.content.html_safe  %></p>
-                <%= link_to 'Show', post, class:"btn btn-lg btn-primary" %>
-                <td><%= link_to 'Edit', edit_post_path(post), class:"btn btn-lg btn-primary" %></td>
+                <%= link_to 'Show', post, class:"btn btn-primary" %>
+                <td><%= link_to 'Edit', edit_post_path(post), class:"btn btn-primary" %></td>
+                <td><%= link_to 'Destroy', post, method: :delete,class:"btn btn-danger", data: { confirm: 'Are you sure?' } %></td>
             </div>
         </div>
         <!-- /.row -->
